@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "复制增强",
+    "description": "在对话记录里选中内容按 Cmd/Ctrl+C 时，复制的是它的 Markdown 源码：公式还原成 $TeX$、代码块还原成围栏、表格还原成 GFM 表格、diff 卡还原成 ```diff、终端块还原成围栏、脚注还原成 [^n] + 定义；正文里字面出现的 Markdown 语法会被转义，只选中公式的一部分时给出那一部分的重建源码。输入框、侧栏与 DSH 自带的复制按钮不受影响；同时向其它插件提供 markdownSource 服务。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

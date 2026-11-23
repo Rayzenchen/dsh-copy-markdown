@@ -1,0 +1,76 @@
+{
+  "name": "@local/dsh-copy-markdown",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Copy a transcript selection as Markdown source: literal prose is escaped, formulas come back as $TeX$ (or, for a partial selection, as the reconstructed source of just that part), code blocks as fences, tables as GFM tables, diff cards as ```diff, terminals as fences, footnotes as [^n] + definitions.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "dsh",
+    "cordis",
+    "markdown",
+    "clipboard",
+    "copy",
+    "katex",
+    "latex",
+    "gfm",
+    "chat-ui",
+    "web-ui",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rayzenchen/dsh-copy-markdown.git"
+  },
+  "homepage": "https://github.com/Rayzenchen/dsh-copy-markdown#readme",
+  "bugs": {
+    "url": "https://github.com/Rayzenchen/dsh-copy-markdown/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.3 <0.3.0",
+    "node": ">=20"
+  },
+  "meta": {
+    "title": "复制增强",
+    "description": "在对话记录里选中内容按 Cmd/Ctrl+C 时，复制的是它的 Markdown 源码：公式还原成 $TeX$、代码块还原成围栏、表格还原成 GFM 表格、diff 卡还原成 ```diff、终端块还原成围栏、脚注还原成 [^n] + 定义；正文里字面出现的 Markdown 语法会被转义，只选中公式的一部分时给出那一部分的重建源码。同时向其它插件提供 markdownSource 服务。"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "tools/*.mjs",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "jsdom": "^29.1.1",
+    "katex": "0.16.47"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  }
+}

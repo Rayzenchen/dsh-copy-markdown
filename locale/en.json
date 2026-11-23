@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Copy enhancement",
+    "description": "Select text in a transcript and press Cmd/Ctrl+C to copy it as Markdown source: formulas as $TeX$ (a partial selection yields the reconstructed source of just that part), code blocks as fences, tables as GFM tables, diff cards as ```diff, terminals as fences, footnotes as [^n] plus definitions. Literal prose is escaped so it pastes back unchanged. The composer, sidebar and Harness' own copy buttons are not affected; the plugin also provides the markdownSource client service for other plugins.",
+    "detail": "docs/DETAIL.md"
+  }
+}

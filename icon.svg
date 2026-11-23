@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="img" aria-label="Copy transcript as Markdown source">
+  <defs>
+    <linearGradient id="cm-front" x1="14.8" y1="10.2" x2="14.8" y2="29.8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#69B9FF"/>
+      <stop offset="1" stop-color="#324DE2"/>
+    </linearGradient>
+    <linearGradient id="cm-back" x1="21.4" y1="5.2" x2="21.4" y2="22.8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8D2FF"/>
+      <stop offset="1" stop-color="#5B7CFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="14.6" y="5.2" width="13.6" height="17.6" rx="2.8" fill="url(#cm-back)"/>
+  <rect x="6.6" y="10.2" width="16.4" height="19.6" rx="3.1" fill="url(#cm-front)"/>
+  <path d="M10.8 24.7V15.3l4 4.8 4-4.8V24.7" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
